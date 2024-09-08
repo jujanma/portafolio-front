@@ -11,7 +11,7 @@ const Navbar = () => {
       id: 0,
     },
     {
-      link: "about",
+      link: "About",
       id: 1,
     },
     {
@@ -33,8 +33,8 @@ const Navbar = () => {
       className={[
         "absolute",
         !isMenuOpen
-          ? "z-[1] absolute w-[69px] h-[47px] p-10"
-          : "items-center justify-evenly flex flex-col z-[1] absolute w-screen h-screen bg-[#202029]",
+          ? " z-[1] absolute w-[69px] h-[47px] p-10 left-4"
+          : " items-center justify-evenly flex flex-col z-[1] fixed w-screen h-screen bg-[#202029]",
       ]}
     >
       <Menu
@@ -49,6 +49,7 @@ const Navbar = () => {
             onClick={()=>setIsMenuOpen(false)}
             to={l.link}
             key={l.id}
+            smooth={500}
           >
             {l.link}
           </Link>

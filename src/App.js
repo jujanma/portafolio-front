@@ -1,5 +1,9 @@
-import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Home from "./Components/Home";
 import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
 
 
 function App() {
@@ -7,6 +11,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Home/>
+      <About/>
+      <Projects />
+      <Experience/>
+      <Contact/>
     </div>
   );
 }
