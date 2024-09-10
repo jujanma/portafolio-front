@@ -48,10 +48,10 @@ const techExperienceList = [
   return (
     <div name="Experience" className=' flex flex-col justify-center items-center w-screen h-screen mt-40'>
         <h2 className=" font-semibold text-[40px]"> Experience</h2>
-        <div className="grid grid-cols-3 w-screen gap-8 mt-[5%] pt-[5%] pb-[5%] bg-[#2B2B29] p-10">
+        <div className="grid grid-cols-4 w-screen gap-8 mt-[5%] pt-[5%] pb-[5%] bg-[#2B2B29] pl-[3.5rem] place-content-center ">
             {techExperienceList.map(techExp =>(
                 <div key={techExp.name} className=' w-[100px] h-[100px]'>
-                <img src={techExp.imageSrc} alt={techExp.name} />
+                <img src={techExp.imageSrc} alt={techExp.name} className=' flex justify-center items-center'/>
             </div>
             ))}
         </div>

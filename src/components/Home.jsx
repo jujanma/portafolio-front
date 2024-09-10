@@ -10,9 +10,9 @@ const Home = () => {
       <img
         src={developerHeader}
         alt="developer"
-        className="absolute z-[-1] left-[70%] top-[200px] sm:left-[20%] sm:static h-[60%] W-[60%]"
+        className="absolute z-[-1] left-[70%] top-[200px] md:left-[20%] md:static h-[60%] W-[60%]"
       />
-      <div className="absolute z-[-1] sm:text-[40px] sm:left-0 sm:w-screen p-6 sm:static left-[20%] top-[40%] w-[619px] h-[250px] text-black text-[64px] font-normal">
+      <div className="absolute z-[-1] md:text-[40px] sm:left-0 md:w-screen p-6 md:static left-[20%] top-[40%] w-[619px] h-[250px] text-black text-[64px] font-normal">
         <p>Hi I'm Juan Manuel a FrontEnd developer</p>
       </div>
     </div>

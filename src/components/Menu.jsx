@@ -17,8 +17,10 @@ const Menu = ({ isMenuOpen, handleMenu }) => {
         <div className="w-[69px] h-[9px] left-0 top-[38px] absolute bg-zinc-300"></div>
       )}
       <div
-        className={`w-[69px] h-[9px] left-0 top-[60px] absolute bg-zinc-300 ${
-          isMenuOpen && "transition-transform rotate-[-45deg] top-[18px]"
+        className={`w-[69px] h-[9px] left-0  absolute bg-zinc-300 ${
+          isMenuOpen
+            ? "transition-transform rotate-[-45deg] top-[20px]"
+            : "top-[60px]"
         }`}
       ></div>
     </div>
